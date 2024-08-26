@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Basic Bootstrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ 
+    body{
+        background-image: linear-gradient(to right, rgb(255, 252, 252), rgb(196, 184, 184));
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+
+    }
+.divider1{
+    
+    height: 75px;
+    width: 100%;
+}
+.divider2{
+    
+    height: 100px;
+    padding-top: 10;
+    width: 100%;
+    padding: 10;
+}
+.divider3{
+    height: 100px;
+    padding-top: 30;
+    width: 100%;
+    padding: 20;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: yellow;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  footer{
+    background-color: darkgrey;
+    color:rgb(252, 245, 245)
+    
+   
+  }
+  .footer1{
+    flex: column;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 1fr minmax(150px, 20%);
+    height: 100px;
+
+  }
+  main, aside {
+    padding: 12px;
+    text-align: center;
+    
+  }
+  
+  main {
+    background: white;
+  }
+  
+  aside {
+    background: gray;
+    display: block;
+    margin-left: 20px;
+    padding: 20px;
+    width: 250px;
+    float: right;
+    color: white;
+    
+
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  li {
+    display: inline;
+  }
+
+</style>
+   </head>
+
+    <body>
+
+       <!--Main Content-->   
+<div class="container mt-5 pt-5">
+    <H1> </H1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team Showcase</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Contact
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">New Product Development Request</a></li>
+                  <li><a class="dropdown-item" href="#"> Contact Sales</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"> Contact Customer/Client Support</a></li>
+                </ul>
+              </li>
+            </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+     
+
+
+</div>
+<!--Products Section-->
+<section id="products" class="my-5"> </section>
+<h2 class="mb-4">OUR PRODUCTS</h2> 
+        <div class="card-group">
+            <div class="card">
+              <img src="phone.jpeg" class="card-img-top" alt="phone picture">
+              <div class="card-body">
+                <h5 class="card-title">Phone Sale S199+ </h5>
+                <p class="card-text">Phone prices are below average starting at $199.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="laptop.jpeg" class="card-img-top" alt="laptop picture">
+              <div class="card-body">
+                <h5 class="card-title">Laptop Sale $299+ </h5>
+                <p class="card-text"> Laptops are on sale prices are as low as $299</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="desktop.jpeg" class="card-img-top" alt="desktop picture">
+              <div class="card-body">
+                <h5 class="card-title">Desktop Sale $399+</h5>
+                <p class="card-text">Desktops are available prices with prices starting at $399.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+           </div>
+           <section>
+            <section class="divider1"></section> 
+            <section class="divider1">
+                <h2 id="teams"> OUR TEAM </h2>
+            <section class="divider1"></section>
+            <div class="card-group">
+                <div class="card">
+                    
+                  <img src="team2.jpeg" class="card-img-top" alt="team collab">
+                  <div class="card-body">
+                    <h5 class="card-title"> Top Team Collaboration</h5>
+                    <p class="card-text">Trust in a team that has top tier tried and true teamwork trial collaborations prior to release</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="team3.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Team Success</h5>
+                    <p class="card-text">It takes team effort on a mult-stage software project. Trust in a  brand that reflects premier team success.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="launch1.jpeg" class="card-img-top" alt="release picture">
+                  <div class="card-body">
+                    <h5 class="card-title">Scheduled Release Dates</h5>
+                    <p class="card-text">When the quality assurance team is satisfied a release date is scheduled for the product(s).</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+
+              <Section>
+                <section class="divider3"></section>
+              </Section>
+
+              <div class="Content">
+                <main>
+                  About:
+                  <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate distinctio culpa deleniti. Error quae at doloribus nobis, nihil repellendus maxime. Numquam provident dolorum debitis officiis quis qui nesciunt officia expedita.</p>
+                  <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate distinctio culpa deleniti. Error quae at doloribus nobis, nihil repellendus maxime. Numquam provident dolorum debitis officiis quis qui nesciunt officia expedita.</p>
+                  <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate distinctio culpa deleniti. Error quae at doloribus nobis, nihil repellendus maxime. Numquam provident dolorum debitis officiis quis qui nesciunt officia expedita.</p>
+                  <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate distinctio culpa deleniti. Error quae at doloribus nobis, nihil repellendus maxime. Numquam provident dolorum debitis officiis quis qui nesciunt officia expedita.</p>
+                </main>
+                <aside>
+                 FACT:
+                 <p> Lorem ipsum was conceived as a filler text....</p>
+                </aside>
+              </div>
+
+           
+                
+                <section class="divider3"></section>
+          
+                    <h2 id="contact"> GET IN CONTACT</h2>
+                <section class="divider1"></section>
+                   
+                
+                <div class="container">
+                    <form action="action.html">
+                  
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  
+                      <label for="subject">Reason For Contact:</label>
+                      <textarea id="subject" name="subject" placeholder="Add additional comments here....regarding your request." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                    <section class="divider2"></section>     
+
+          <div class="div4">  
+                      
+            <footer>
+              <div class="div4">
+                <a href="#home" class="div4">Home</a>
+                <a href="#news" class="div4">News</a>
+                <a href="#contact" class="div4">Contact</a>
+                <a href="#about" class="div4">About</a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+              </div>
+       
+
+             ...
+             </footer>
+            </div>          
+</section>
+
+  </body>
+</html>
+   
